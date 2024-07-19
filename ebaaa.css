@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --branco-principal: #ffffff;
+    --cinza-secundario: #c0c0c0;
+    --botao-vermelho: red;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-weight: 400;
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("figma/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    align-items: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container_botão {
+    background-color: blueviolet;
+    border-radius: 10px;
+    padding: 1em;
+    color: black;
+    display: block;
+    margin-bottom: 1em;
+    text-decoration: none;
+}
+
+.BTsec {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal); 
+    color: aquamarine;
+    margin: 0.6em;
+}
+
+.container__img {
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.descricao__texto{
+    color: red;
+}
+
+.secundario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 6em;
+}
+
+.secundario__img {
+    width: 40%;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.sequencia {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 1em;
+}
+
+.lista_Itens {
+    color: var(--branco-principal);
+}
+
+.Rodape {
+    color: var(--branco-principal);
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+}
+
+.lista_links {
+    display: flex;
+    gap: 1em;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista_link a {
+    color: var(--branco-principal);
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: block;
+        text-align: center;
+    }
+
+    .secundario,
+    .container__caixa {
+        margin: 0;
+    }
+
+    .secundario__img {
+        width: 100%;
+        margin: 1em 0;
+    }
+
+    .lista_links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
